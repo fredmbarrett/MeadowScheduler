@@ -1,0 +1,31 @@
+# Uncomment additional options as needed.
+# To learn more about these config options, including custom application configuration settings, check out the Application Settings Configuration documentation.
+# http://developer.wildernesslabs.co/Meadow/Meadow.OS/Configuration/Application_Settings_Configuration/
+
+Lifecycle:
+    # Control whether Meadow will restart when an unhandled app exception occurs. Combine with Lifecycle > AppFailureRestartDelaySeconds to control restart timing.
+    RestartOnAppFailure: false
+    # # When app set to restart automatically on app failure, 
+    # AppFailureRestartDelaySeconds: 15
+
+# # Adjust the level of logging detail.
+# Logging:
+#     LogLevel:
+#         Default: "Trace"
+
+# App Settings
+Scheduler:
+    #
+    # # # # NTP Server settings
+    #
+    # NTP Server name
+    NtpServerName: "pool.ntp.org"
+
+    # NTP Server port
+    NtpServerPort: 123
+
+    # Number of seconds before retrying NTP server connection
+    NtpTimeoutSeconds: 15
+
+    # Number of times to retry NTP request before failing
+    NtpRetryCount: 5
